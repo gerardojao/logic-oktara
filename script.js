@@ -1,8 +1,11 @@
 
-let storage = 20,
-k = 'shelf',
-amountShelves = 3
+// let storage = 20,
+// k = 'shelf',
+// amountShelves = 3
 
+const orangeStore = (storage, amountShelves)=>{
+    let k= 'shelf'
+    
 for(i = 1; i <= amountShelves; i++) {
     eval( k + i + '= ' + storage); 
 }
@@ -59,6 +62,10 @@ if(orangesSelled < totalOranges){
 }
    
 }else console.log(`we don't have that amount, we can sell you ${totalOranges} oranges`)
+
+}
+orangeStore(20,3)
+
 // for (let i = 0; i < arrS.length; i++) {
 // console.log(arrS[i]);
     
